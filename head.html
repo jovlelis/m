@@ -1,0 +1,256 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style/gen.css">
+<link rel="stylesheet" href="style/head.css">
+<style>
+
+</style>
+
+<header>
+  <div class="container-head">
+    <div class="top-head">
+      <div class="left-top-head">
+        <img src="images/logo.png" alt="">
+        <a href="#" class="logo"><span>3J&rsquo;s </span>CARE PHARMACY</a>
+      </div>
+      <div class="mid-top-head">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voice-search-button">
+          <img class="voice-search-icon voice" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button></div>
+        
+      <div class="right-top-head">
+        <a href="tel:63+ 9076696013" class="no"><i class="fas fa-phone"></i> 63+ 9076696013</a>  
+        <a href="product.html"><button class="voice-search-button" style="background: transparent;">
+          <img class="voice-search-icon" src="icons/shop.png">
+          <div class="tooltip">Shop</div>
+        </button>     </a>
+      </div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="service.html">Service</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div onclick="toggleMenu()" class="user-picone">
+      <img src="icons/user.jpg" class="user-pics">
+    </div>
+    <div onclick="toggleMenu()" class="user-pictwo">
+      <img src="images/logo.png" class="user-pis" alt="">
+    </div>
+    
+    <div class="sub-menu-wrap" id="subMenu">
+      <div class="sub-menu">
+        <div class="user-info">
+          <img src="icons/user.jpg" alt="">
+          <h3> User</h3>
+        </div>
+        <hr>
+
+        <a id="sign" class="sub-menu-link">
+          <i class="fas fa-sign-in"></i>
+          <p>Sign in</p>
+          <span>></span>
+        </a>
+      </div>
+    </div>
+ </div>
+ <div class="sub-menu-wrap" id="subMenuone">
+  <div class="sub-menu">
+    <div class="user-info">
+      <img src="images/logo.png" alt="">
+      <h3> 3J&rsquo;s Care</h3>
+    </div>
+    <hr>
+
+    <a href="#" class="sub-menu-link">
+      <i class="fas fa-user-circle"></i>
+      <p>Edit Profile</p>
+      <span>></span>
+    </a>
+    <a href="#" class="sub-menu-link">
+      <i class="fas fa-envelope"></i>
+      <p>Inbox</p>
+      <span>></span>
+    </a>
+    <a href="#" class="sub-menu-link">
+      <i class="fas fa-gear fa-spin "></i>
+      <p>Setting and Privacy</p>
+      <span>></span>
+    </a>
+    <a href="#" class="sub-menu-link">
+      <i class="fas fa-question-circle"></i>
+      <p>Help & Support</p>
+      <span>></span>
+    </a>
+    <a href="#" id="sign-out" class="sub-menu-link">
+      <i class="fas fa-door-open"></i>
+      <p>Logout</p>
+      <span>></span>
+    </a>
+  </div>
+</div>
+</div>
+
+<div>
+
+</div>
+
+
+</header>
+
+<div class="sign-in">
+<div class="form">
+<h2>Sign in</h2>
+<div class="inputBox">
+  <input type="text" required="required">
+  <span>Username</span>
+  <i></i>
+</div>
+<div class="inputBox">
+  <input type="password" required="required">
+  <span>Password</span>
+  <i></i>
+</div>
+<div class="links">
+  <a href="#">Forget Password</a>
+  <a id="create">Signup</a>
+</div>
+<div class="links">
+  <a href="#">Sign in with</a>
+</div>
+<input type="submit" value="Login" class="loginz">
+</div>
+</div>
+
+<div class="sign-up">
+<div class="form">
+<h2>Sign up</h2>
+<div class="inputBox">
+  <input type="text" required="required">
+  <span>Username</span>
+  <i></i>
+</div>
+<div class="inputBox">
+  <input type="password" required="required">
+  <span>Password</span>
+  <i></i>
+</div>
+<div class="inputBox">
+    <input type="password" required="required">
+    <span>Repeat Password</span>
+    <i></i>
+  </div>
+<div class="links">
+  <a href="#">Sign up with</a>
+  <a class="signz" >Sign in</a>
+</div>
+<input type="submit" value="Sign up" id="signz">
+</div>
+</div>
+
+<div class="speak">
+<div class="spe">
+  <img class="speaks" src="icons/voice-search-icon.svg" alt="">
+  <p>Speak now</p>
+</div>
+</div>
+</header>
+   
+
+    
+
+
+<script>
+  
+  let subMenu = document.getElementById("subMenu");
+  let subMenuone = document.getElementById("subMenuone");
+  
+
+  function toggleMenu(){
+    subMenu.classList.toggle("open-menu");
+  }
+
+
+</script>
+
+<script type="text/javascript">
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector(".nav");
+    header.classList.toggle("sticky", window.scrollY > 0);
+  })
+
+  var voice = document.querySelector(".voice");
+  var speak = document.querySelector(".speak");
+  var spe = document.querySelector(".spe");
+  var login = document.querySelector(".loginz");
+  var userPictwo = document.querySelector(".user-pictwo");
+  var signIn = document.querySelector(".sign-in");
+  var sform = document.querySelector("#sign");
+  var signOut = document.querySelector("#sign-out");
+  var create = document.querySelector("#create");
+  var signUP = document.querySelector(".sign-up");
+  var signz = document.querySelector(".signz");
+  var signZ = document.querySelector("#signz");
+
+  signZ.onclick = () => {
+    signUP.style.right = "-100%";
+    signUP.style.top= "-200%";
+    signIn.style.top = "26%";
+    signIn.style.right = "37%";
+    }
+
+  signz.onclick = () => {
+    signUP.style.right= "-100%";
+    signUP.style.top= "-200%";
+    signIn.style.top = "26%";
+    signIn.style.right = "37%";
+    }
+
+  create.onclick = () => {
+    signUP.style.top = "26%";
+    signUP.style.right = "37%";
+      signIn.style.top = "-200%";
+      signIn.style.right = "-100%";
+
+  };
+
+  signOut.onclick= () => {
+    userPictwo.style.top = "-100%";
+    subMenuone.classList.remove("open-menu");
+
+  }
+
+  userPictwo.onclick=() => {
+    subMenuone.classList.toggle("open-menu");
+  };
+
+  login.onclick =() => {
+    userPictwo.style.top = "25px";
+    signIn.style.right = "-100%";
+    signIn.style.top = "-200%";
+
+  };
+  sform.onclick =() => {
+    subMenu.classList.remove("open-menu");
+    signIn.style.top = "26%";
+    signIn.style.right = "37%";
+  };
+
+  voice.onclick = () => {
+    speak.classList.add("q");
+  };
+
+  spe.onclick = () => {
+    speak.classList.remove("q");
+  };
+</script>
